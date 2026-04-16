@@ -31,7 +31,7 @@ svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
   <!-- 头部区域 -->
   <rect width="595" height="150" fill="url(#headerGrad)"/>
   <text x="297.5" y="55" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="28" font-weight="bold" letter-spacing="3">凤起南航·泰达未来</text>
-  <text x="297.5" y="90" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" letter-spacing="2">首届民航创新实践挑战赛</text>
+  <text x="297.5" y="90" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" letter-spacing="2">民航创新实践挑战赛</text>
   
   <!-- 赛道信息 -->
   <rect y="150" width="595" height="40" fill="url(#trackGrad)"/>
@@ -75,9 +75,8 @@ svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
   
   <!-- 底部区域 -->
   <rect y="700" width="595" height="142" fill="url(#footerGrad)"/>
-  <text x="297.5" y="735" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="12">参赛队员：GORDON（队长）及团队成员</text>
-  <text x="297.5" y="770" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" font-weight="bold">南京航空航天大学 民航学院</text>
-  <text x="297.5" y="805" text-anchor="middle" fill="#999" font-family="SimSun, serif" font-size="11">2026 年 4 月 17 日</text>
+  <text x="297.5" y="750" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="14">参赛队员：032580219 王徐嘉</text>
+  <text x="297.5" y="785" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" font-weight="bold">南京航空航天大学</text>
 </svg>
 '''
 
