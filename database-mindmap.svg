@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
   <defs>
     <!-- Gradients -->
     <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,13 +22,14 @@
       .highlight { font: bold 15px 'Segoe UI', Arial, sans-serif; fill: #2563eb; }
       .footer { font: 14px 'Segoe UI', Arial, sans-serif; fill: #64748b; }
       .takeaway { font: 16px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
-      .quote { font: italic 15px 'Segoe UI', Arial, sans-serif; fill: #e2e8f0; }
+      .takeaway-small { font: 14px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
+      .quote { font: italic 14px 'Segoe UI', Arial, sans-serif; fill: #e2e8f0; }
       .connector { stroke: #cbd5e1; stroke-width: 2.5; fill: none; }
     </style>
   </defs>
   
   <!-- Background -->
-  <rect width="1600" height="1100" fill="#ffffff"/>
+  <rect width="1600" height="1200" fill="#ffffff"/>
   
   <!-- Subtle grid pattern -->
   <defs>
@@ -36,7 +37,7 @@
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#f1f5f9" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
   
   <!-- Central Topic -->
   <ellipse cx="800" cy="80" rx="200" ry="50" fill="url(#mainGrad)" stroke="#1e3a8a" stroke-width="3" filter="url(#shadowStrong)"/>
@@ -114,47 +115,53 @@
   <!-- Separator Line -->
   <line x1="150" y1="520" x2="1450" y2="520" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10,5"/>
   
-  <!-- Bottom Section: Key Takeaways -->
-  <rect x="150" y="550" width="1300" height="280" rx="20" fill="url(#mainGrad)" filter="url(#shadowStrong)"/>
+  <!-- Bottom Section: Key Takeaways - ENLARGED -->
+  <rect x="150" y="560" width="1300" height="350" rx="20" fill="url(#mainGrad)" filter="url(#shadowStrong)"/>
   
   <!-- Title -->
-  <text x="800" y="605" text-anchor="middle" class="title" font-size="28">Key Takeaways</text>
-  <line x1="250" y1="625" x2="1350" y2="625" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="800" y="620" text-anchor="middle" class="title" font-size="28">Key Takeaways</text>
+  <line x1="250" y1="645" x2="1350" y2="645" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
   
   <!-- Left Column -->
-  <text x="380" y="680" text-anchor="middle" class="takeaway">✓ Databases organize</text>
-  <text x="380" y="710" text-anchor="middle" class="takeaway">&amp; store data efficiently</text>
-  <text x="380" y="755" text-anchor="middle" class="takeaway">✓ Ensure data integrity</text>
-  <text x="380" y="785" text-anchor="middle" class="takeaway">&amp; security</text>
-  <text x="380" y="830" text-anchor="middle" class="takeaway">✓ 5 core components:</text>
-  <text x="380" y="860" text-anchor="middle" class="takeaway" font-size="14">Tables, Records, Fields,</text>
-  <text x="380" y="885" text-anchor="middle" class="takeaway" font-size="14">Queries, Indexes</text>
+  <text x="380" y="700" text-anchor="middle" class="takeaway">✓ Databases organize</text>
+  <text x="380" y="730" text-anchor="middle" class="takeaway">&amp; store data efficiently</text>
+  
+  <text x="380" y="780" text-anchor="middle" class="takeaway">✓ Ensure data integrity</text>
+  <text x="380" y="810" text-anchor="middle" class="takeaway">&amp; security</text>
+  
+  <text x="380" y="860" text-anchor="middle" class="takeaway">✓ 5 core components:</text>
+  <text x="380" y="890" text-anchor="middle" class="takeaway-small">Tables, Records, Fields,</text>
+  <text x="380" y="915" text-anchor="middle" class="takeaway-small">Queries, Indexes</text>
   
   <!-- Center Column -->
-  <text x="800" y="680" text-anchor="middle" class="takeaway">✓ Used in every industry:</text>
-  <text x="800" y="710" text-anchor="middle" class="takeaway" font-size="14">Education, E-commerce,</text>
-  <text x="800" y="735" text-anchor="middle" class="takeaway" font-size="14">Social Media, Healthcare,</text>
-  <text x="800" y="760" text-anchor="middle" class="takeaway" font-size="14">Finance</text>
-  <text x="800" y="805" text-anchor="middle" class="takeaway">✓ Essential developer skill</text>
-  <text x="800" y="845" text-anchor="middle" class="takeaway">✓ Evolving with cloud</text>
-  <text x="800" y="875" text-anchor="middle" class="takeaway">&amp; AI technology</text>
+  <text x="800" y="700" text-anchor="middle" class="takeaway">✓ Used in every industry:</text>
+  <text x="800" y="735" text-anchor="middle" class="takeaway-small">Education, E-commerce,</text>
+  <text x="800" y="760" text-anchor="middle" class="takeaway-small">Social Media, Healthcare,</text>
+  <text x="800" y="785" text-anchor="middle" class="takeaway-small">Finance</text>
+  
+  <text x="800" y="835" text-anchor="middle" class="takeaway">✓ Essential developer skill</text>
+  
+  <text x="800" y="885" text-anchor="middle" class="takeaway">✓ Evolving with cloud</text>
+  <text x="800" y="915" text-anchor="middle" class="takeaway">&amp; AI technology</text>
   
   <!-- Right Column - Quote -->
-  <rect x="1100" y="670" width="280" height="230" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-  <text x="1240" y="720" text-anchor="middle" class="quote" font-size="16">"Databases power</text>
-  <text x="1240" y="750" text-anchor="middle" class="quote" font-size="16">the digital world</text>
-  <text x="1240" y="780" text-anchor="middle" class="quote" font-size="16">we live in."</text>
-  <text x="1240" y="830" text-anchor="middle" class="takeaway" font-size="14" font-style="italic">Understanding databases</text>
-  <text x="1240" y="860" text-anchor="middle" class="takeaway" font-size="14" font-style="italic">is the first step to</text>
-  <text x="1240" y="890" text-anchor="middle" class="takeaway" font-size="14" font-style="italic">becoming a great</text>
-  <text x="1240" y="915" text-anchor="middle" class="takeaway" font-size="14" font-style="italic">developer.</text>
+  <rect x="1120" y="680" width="260" height="210" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="1250" y="725" text-anchor="middle" class="quote" font-size="14">"Databases power</text>
+  <text x="1250" y="750" text-anchor="middle" class="quote" font-size="14">the digital world</text>
+  <text x="1250" y="775" text-anchor="middle" class="quote" font-size="14">we live in."</text>
+  
+  <text x="1250" y="825" text-anchor="middle" class="takeaway-small" font-style="italic">Understanding</text>
+  <text x="1250" y="850" text-anchor="middle" class="takeaway-small" font-style="italic">databases is the</text>
+  <text x="1250" y="875" text-anchor="middle" class="takeaway-small" font-style="italic">first step to</text>
+  <text x="1250" y="900" text-anchor="middle" class="takeaway-small" font-style="italic">becoming a great</text>
+  <text x="1250" y="925" text-anchor="middle" class="takeaway-small" font-style="italic">developer.</text>
   
   <!-- Footer -->
-  <text x="800" y="1070" text-anchor="middle" class="footer">Database Presentation | Freshman Level | 2026</text>
+  <text x="800" y="1170" text-anchor="middle" class="footer">Database Presentation | Freshman Level | 2026</text>
   
   <!-- Decorative elements -->
   <circle cx="120" cy="120" r="80" fill="#2563eb" opacity="0.04"/>
-  <circle cx="1480" cy="980" r="100" fill="#8b5cf6" opacity="0.04"/>
+  <circle cx="1480" cy="1080" r="100" fill="#8b5cf6" opacity="0.04"/>
   <circle cx="1450" cy="180" r="50" fill="#10b981" opacity="0.06"/>
-  <circle cx="150" cy="950" r="60" fill="#f59e0b" opacity="0.05"/>
+  <circle cx="150" cy="1050" r="60" fill="#f59e0b" opacity="0.05"/>
 </svg>
