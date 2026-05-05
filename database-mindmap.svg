@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <style>
+      .title { font: bold 28px sans-serif; fill: #1a1a2e; }
+      .main { font: bold 20px sans-serif; fill: #16213e; }
+      .sub { font: 16px sans-serif; fill: #0f3460; }
+      .detail { font: 14px sans-serif; fill: #533483; }
+      .box-title { fill: #e94560; }
+      .box-main { fill: #0f3460; }
+      .box-sub { fill: #533483; }
+      .line { stroke: #e94560; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f5f5f5"/>
+  
+  <!-- Central Topic -->
+  <ellipse cx="600" cy="80" rx="180" ry="50" fill="#e94560" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="600" y="88" text-anchor="middle" class="title" fill="white">DATABASES 数据库</text>
+  
+  <!-- Branch 1: What is Database -->
+  <line x1="600" y1="130" x2="300" y2="220" class="line"/>
+  <rect x="180" y="220" width="240" height="140" rx="10" fill="#16213e" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="300" y="250" text-anchor="middle" class="main" fill="white">1. 什么是数据库</text>
+  <text x="300" y="280" text-anchor="middle" class="sub" fill="#ddd">电子化的数据集合</text>
+  <text x="300" y="305" text-anchor="middle" class="sub" fill="#ddd">数字文件柜</text>
+  <text x="300" y="330" text-anchor="middle" class="sub" fill="#ddd">组织、存储、检索数据</text>
+  
+  <!-- Branch 2: Why Need -->
+  <line x1="600" y1="130" x2="600" y2="220" class="line"/>
+  <rect x="480" y="220" width="240" height="160" rx="10" fill="#0f3460" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="600" y="250" text-anchor="middle" class="main" fill="white">2. 为什么需要</text>
+  <text x="600" y="280" text-anchor="middle" class="sub" fill="#ddd">数据完整性</text>
+  <text x="600" y="305" text-anchor="middle" class="sub" fill="#ddd">并发访问</text>
+  <text x="600" y="330" text-anchor="middle" class="sub" fill="#ddd">安全性</text>
+  <text x="600" y="355" text-anchor="middle" class="detail" fill="#aaa">如：银行转账、双 11</text>
+  
+  <!-- Branch 3: Components -->
+  <line x1="600" y1="130" x2="900" y2="220" class="line"/>
+  <rect x="780" y="220" width="240" height="180" rx="10" fill="#533483" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="900" y="250" text-anchor="middle" class="main" fill="white">3. 基本组成</text>
+  <text x="900" y="280" text-anchor="middle" class="sub" fill="#ddd">Tables 表</text>
+  <text x="900" y="305" text-anchor="middle" class="sub" fill="#ddd">Records 记录 (行)</text>
+  <text x="900" y="330" text-anchor="middle" class="sub" fill="#ddd">Fields 字段 (列)</text>
+  <text x="900" y="355" text-anchor="middle" class="sub" fill="#ddd">Queries 查询</text>
+  <text x="900" y="380" text-anchor="middle" class="sub" fill="#ddd">Indexes 索引</text>
+  
+  <!-- Branch 4: Applications -->
+  <line x1="600" y1="130" x2="250" y2="450" class="line"/>
+  <rect x="100" y="450" width="300" height="180" rx="10" fill="#1a1a2e" stroke="#e94560" stroke-width="2"/>
+  <text x="250" y="480" text-anchor="middle" class="main" fill="white">4. 实际应用场景</text>
+  <text x="250" y="510" text-anchor="middle" class="sub" fill="#ddd">📚 教育：学生记录、成绩</text>
+  <text x="250" y="535" text-anchor="middle" class="sub" fill="#ddd">🛒 电商：商品、订单、库存</text>
+  <text x="250" y="560" text-anchor="middle" class="sub" fill="#ddd">💬 社交：帖子、评论、好友</text>
+  <text x="250" y="585" text-anchor="middle" class="sub" fill="#ddd">🏥 医疗：病历、处方</text>
+  <text x="250" y="610" text-anchor="middle" class="sub" fill="#ddd">🏦 金融：账户、交易</text>
+  
+  <!-- Branch 5: Future -->
+  <line x1="600" y1="130" x2="600" y2="450" class="line"/>
+  <rect x="480" y="450" width="240" height="140" rx="10" fill="#e94560" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="600" y="480" text-anchor="middle" class="main" fill="white">5. 未来趋势</text>
+  <text x="600" y="510" text-anchor="middle" class="sub" fill="white">☁️ 云数据库</text>
+  <text x="600" y="535" text-anchor="middle" class="sub" fill="white">⚡ 实时数据库</text>
+  <text x="600" y="560" text-anchor="middle" class="sub" fill="white">🤖 AI 集成</text>
+  
+  <!-- Branch 6: Summary -->
+  <line x1="600" y1="130" x2="950" y2="450" class="line"/>
+  <rect x="800" y="450" width="280" height="160" rx="10" fill="#16213e" stroke="#e94560" stroke-width="2"/>
+  <text x="940" y="480" text-anchor="middle" class="main" fill="white">6. 总结</text>
+  <text x="940" y="510" text-anchor="middle" class="sub" fill="#ddd">✓ 组织存储数据</text>
+  <text x="940" y="535" text-anchor="middle" class="sub" fill="#ddd">✓ 保证完整性、安全</text>
+  <text x="940" y="560" text-anchor="middle" class="sub" fill="#ddd">✓ 五大组件</text>
+  <text x="940" y="585" text-anchor="middle" class="sub" fill="#ddd">✓ 广泛应用于各行业</text>
+  
+  <!-- Footer -->
+  <text x="600" y="880" text-anchor="middle" class="detail" fill="#666">Database Presentation | 2026 | Freshman Level</text>
+</svg>
