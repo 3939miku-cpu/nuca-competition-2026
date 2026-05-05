@@ -1,78 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
   <defs>
+    <!-- Gradients -->
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadows -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowStrong" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    
+    <!-- Styles -->
     <style>
-      .title { font: bold 28px sans-serif; fill: #1a1a2e; }
-      .main { font: bold 20px sans-serif; fill: #16213e; }
-      .sub { font: 16px sans-serif; fill: #0f3460; }
-      .detail { font: 14px sans-serif; fill: #533483; }
-      .box-title { fill: #e94560; }
-      .box-main { fill: #0f3460; }
-      .box-sub { fill: #533483; }
-      .line { stroke: #e94560; stroke-width: 2; fill: none; }
+      .title { font: bold 32px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
+      .main { font: bold 22px 'Segoe UI', Arial, sans-serif; fill: #1e293b; }
+      .sub { font: 16px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .highlight { font: bold 16px 'Segoe UI', Arial, sans-serif; fill: #2563eb; }
+      .footer { font: 14px 'Segoe UI', Arial, sans-serif; fill: #94a3b8; }
+      .connector { stroke: #cbd5e1; stroke-width: 3; fill: none; }
+      .connectorMain { stroke: #2563eb; stroke-width: 4; fill: none; }
     </style>
   </defs>
   
   <!-- Background -->
-  <rect width="1200" height="900" fill="#f5f5f5"/>
+  <rect width="1400" height="1000" fill="#f8fafc"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#grid)"/>
   
   <!-- Central Topic -->
-  <ellipse cx="600" cy="80" rx="180" ry="50" fill="#e94560" stroke="#1a1a2e" stroke-width="3"/>
-  <text x="600" y="88" text-anchor="middle" class="title" fill="white">DATABASES 数据库</text>
+  <ellipse cx="700" cy="90" rx="220" ry="55" fill="url(#mainGrad)" stroke="#1e3a8a" stroke-width="3" filter="url(#shadowStrong)"/>
+  <text x="700" y="100" text-anchor="middle" class="title">DATABASES</text>
   
-  <!-- Branch 1: What is Database -->
-  <line x1="600" y1="130" x2="300" y2="220" class="line"/>
-  <rect x="180" y="220" width="240" height="140" rx="10" fill="#16213e" stroke="#1a1a2e" stroke-width="2"/>
-  <text x="300" y="250" text-anchor="middle" class="main" fill="white">1. 什么是数据库</text>
-  <text x="300" y="280" text-anchor="middle" class="sub" fill="#ddd">电子化的数据集合</text>
-  <text x="300" y="305" text-anchor="middle" class="sub" fill="#ddd">数字文件柜</text>
-  <text x="300" y="330" text-anchor="middle" class="sub" fill="#ddd">组织、存储、检索数据</text>
+  <!-- Main connector lines -->
+  <line x1="700" y1="145" x2="280" y2="280" class="connector"/>
+  <line x1="700" y1="145" x2="490" y2="280" class="connector"/>
+  <line x1="700" y1="145" x2="700" y2="280" class="connector"/>
+  <line x1="700" y1="145" x2="910" y2="280" class="connector"/>
+  <line x1="700" y1="145" x2="1120" y2="280" class="connector"/>
   
-  <!-- Branch 2: Why Need -->
-  <line x1="600" y1="130" x2="600" y2="220" class="line"/>
-  <rect x="480" y="220" width="240" height="160" rx="10" fill="#0f3460" stroke="#1a1a2e" stroke-width="2"/>
-  <text x="600" y="250" text-anchor="middle" class="main" fill="white">2. 为什么需要</text>
-  <text x="600" y="280" text-anchor="middle" class="sub" fill="#ddd">数据完整性</text>
-  <text x="600" y="305" text-anchor="middle" class="sub" fill="#ddd">并发访问</text>
-  <text x="600" y="330" text-anchor="middle" class="sub" fill="#ddd">安全性</text>
-  <text x="600" y="355" text-anchor="middle" class="detail" fill="#aaa">如：银行转账、双 11</text>
+  <!-- Branch 1: Definition -->
+  <rect x="130" y="280" width="300" height="180" rx="12" fill="url(#boxGrad1)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="130" y="280" width="300" height="50" rx="12" fill="#3b82f6" opacity="0.1"/>
+  <text x="280" y="315" text-anchor="middle" class="main">1. Definition</text>
+  <line x1="150" y1="335" x2="410" y2="335" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="280" y="365" text-anchor="middle" class="sub">Organized collection of data</text>
+  <text x="280" y="390" text-anchor="middle" class="sub">Stored electronically</text>
+  <text x="280" y="415" text-anchor="middle" class="sub">Efficient storage &amp; retrieval</text>
+  <text x="280" y="445" text-anchor="middle" class="highlight">→ Digital filing cabinet</text>
   
-  <!-- Branch 3: Components -->
-  <line x1="600" y1="130" x2="900" y2="220" class="line"/>
-  <rect x="780" y="220" width="240" height="180" rx="10" fill="#533483" stroke="#1a1a2e" stroke-width="2"/>
-  <text x="900" y="250" text-anchor="middle" class="main" fill="white">3. 基本组成</text>
-  <text x="900" y="280" text-anchor="middle" class="sub" fill="#ddd">Tables 表</text>
-  <text x="900" y="305" text-anchor="middle" class="sub" fill="#ddd">Records 记录 (行)</text>
-  <text x="900" y="330" text-anchor="middle" class="sub" fill="#ddd">Fields 字段 (列)</text>
-  <text x="900" y="355" text-anchor="middle" class="sub" fill="#ddd">Queries 查询</text>
-  <text x="900" y="380" text-anchor="middle" class="sub" fill="#ddd">Indexes 索引</text>
+  <!-- Branch 2: Why Needed -->
+  <rect x="340" y="280" width="300" height="180" rx="12" fill="url(#boxGrad2)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="340" y="280" width="300" height="50" rx="12" fill="#10b981" opacity="0.1"/>
+  <text x="490" y="315" text-anchor="middle" class="main">2. Why Needed</text>
+  <line x1="360" y1="335" x2="620" y2="335" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="490" y="365" text-anchor="middle" class="sub">✓ Data Integrity</text>
+  <text x="490" y="390" text-anchor="middle" class="sub">✓ Concurrent Access</text>
+  <text x="490" y="415" text-anchor="middle" class="sub">✓ Security &amp; Permissions</text>
+  <text x="490" y="445" text-anchor="middle" class="highlight">Example: Banking, E-commerce</text>
+  
+  <!-- Branch 3: Components (Center) -->
+  <rect x="550" y="280" width="300" height="180" rx="12" fill="url(#boxGrad1)" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="550" y="280" width="300" height="50" rx="12" fill="#8b5cf6" opacity="0.1"/>
+  <text x="700" y="315" text-anchor="middle" class="main">3. Components</text>
+  <line x1="570" y1="335" x2="830" y2="335" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="700" y="365" text-anchor="middle" class="sub">📊 Tables (Data storage)</text>
+  <text x="700" y="390" text-anchor="middle" class="sub">📝 Records / Rows</text>
+  <text x="700" y="415" text-anchor="middle" class="sub">📋 Fields / Columns</text>
+  <text x="700" y="440" text-anchor="middle" class="sub">🔍 Queries &amp; Indexes</text>
+  <text x="700" y="465" text-anchor="middle" class="highlight" font-size="14">5 Core Elements</text>
   
   <!-- Branch 4: Applications -->
-  <line x1="600" y1="130" x2="250" y2="450" class="line"/>
-  <rect x="100" y="450" width="300" height="180" rx="10" fill="#1a1a2e" stroke="#e94560" stroke-width="2"/>
-  <text x="250" y="480" text-anchor="middle" class="main" fill="white">4. 实际应用场景</text>
-  <text x="250" y="510" text-anchor="middle" class="sub" fill="#ddd">📚 教育：学生记录、成绩</text>
-  <text x="250" y="535" text-anchor="middle" class="sub" fill="#ddd">🛒 电商：商品、订单、库存</text>
-  <text x="250" y="560" text-anchor="middle" class="sub" fill="#ddd">💬 社交：帖子、评论、好友</text>
-  <text x="250" y="585" text-anchor="middle" class="sub" fill="#ddd">🏥 医疗：病历、处方</text>
-  <text x="250" y="610" text-anchor="middle" class="sub" fill="#ddd">🏦 金融：账户、交易</text>
+  <rect x="760" y="280" width="300" height="180" rx="12" fill="url(#boxGrad2)" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="760" y="280" width="300" height="50" rx="12" fill="#f59e0b" opacity="0.1"/>
+  <text x="910" y="315" text-anchor="middle" class="main">4. Applications</text>
+  <line x1="780" y1="335" x2="1040" y2="335" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="910" y="365" text-anchor="middle" class="sub">📚 Education (Grades, Records)</text>
+  <text x="910" y="390" text-anchor="middle" class="sub">🛒 E-commerce (Orders, Inventory)</text>
+  <text x="910" y="415" text-anchor="middle" class="sub">💬 Social Media (Posts, Friends)</text>
+  <text x="910" y="440" text-anchor="middle" class="sub">🏥 Healthcare (Patient Records)</text>
+  <text x="910" y="465" text-anchor="middle" class="sub">🏦 Finance (Accounts, Transactions)</text>
   
   <!-- Branch 5: Future -->
-  <line x1="600" y1="130" x2="600" y2="450" class="line"/>
-  <rect x="480" y="450" width="240" height="140" rx="10" fill="#e94560" stroke="#1a1a2e" stroke-width="2"/>
-  <text x="600" y="480" text-anchor="middle" class="main" fill="white">5. 未来趋势</text>
-  <text x="600" y="510" text-anchor="middle" class="sub" fill="white">☁️ 云数据库</text>
-  <text x="600" y="535" text-anchor="middle" class="sub" fill="white">⚡ 实时数据库</text>
-  <text x="600" y="560" text-anchor="middle" class="sub" fill="white">🤖 AI 集成</text>
+  <rect x="970" y="280" width="300" height="180" rx="12" fill="url(#boxGrad1)" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="970" y="280" width="300" height="50" rx="12" fill="#ef4444" opacity="0.1"/>
+  <text x="1120" y="315" text-anchor="middle" class="main">5. Future Trends</text>
+  <line x1="990" y1="335" x2="1250" y2="335" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1120" y="365" text-anchor="middle" class="sub">☁️ Cloud Databases</text>
+  <text x="1120" y="390" text-anchor="middle" class="sub">⚡ Real-time Processing</text>
+  <text x="1120" y="415" text-anchor="middle" class="sub">🤖 AI Integration</text>
+  <text x="1120" y="445" text-anchor="middle" class="highlight">AWS, Google Cloud, Azure</text>
   
-  <!-- Branch 6: Summary -->
-  <line x1="600" y1="130" x2="950" y2="450" class="line"/>
-  <rect x="800" y="450" width="280" height="160" rx="10" fill="#16213e" stroke="#e94560" stroke-width="2"/>
-  <text x="940" y="480" text-anchor="middle" class="main" fill="white">6. 总结</text>
-  <text x="940" y="510" text-anchor="middle" class="sub" fill="#ddd">✓ 组织存储数据</text>
-  <text x="940" y="535" text-anchor="middle" class="sub" fill="#ddd">✓ 保证完整性、安全</text>
-  <text x="940" y="560" text-anchor="middle" class="sub" fill="#ddd">✓ 五大组件</text>
-  <text x="940" y="585" text-anchor="middle" class="sub" fill="#ddd">✓ 广泛应用于各行业</text>
+  <!-- Bottom Section: Key Takeaways -->
+  <line x1="200" y1="520" x2="1200" y2="520" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,4"/>
+  
+  <rect x="200" y="540" width="1000" height="200" rx="16" fill="url(#mainGrad)" filter="url(#shadowStrong)"/>
+  <text x="700" y="585" text-anchor="middle" class="title" font-size="26">Key Takeaways</text>
+  
+  <text x="350" y="640" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ Databases organize &amp; store data</text>
+  <text x="350" y="670" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ Ensure integrity &amp; security</text>
+  <text x="350" y="700" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ 5 core components</text>
+  
+  <text x="700" y="640" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ Used in every industry</text>
+  <text x="700" y="670" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ Essential developer skill</text>
+  <text x="700" y="700" text-anchor="middle" class="sub" fill="#e2e8f0" font-size="16">✓ Evolving with cloud &amp; AI</text>
+  
+  <text x="1050" y="655" text-anchor="middle" class="sub" fill="#ffffff" font-size="14" font-style="italic">"Databases power the</text>
+  <text x="1050" y="680" text-anchor="middle" class="sub" fill="#ffffff" font-size="14" font-style="italic">digital world we live in"</text>
   
   <!-- Footer -->
-  <text x="600" y="880" text-anchor="middle" class="detail" fill="#666">Database Presentation | 2026 | Freshman Level</text>
+  <text x="700" y="960" text-anchor="middle" class="footer">Database Presentation | Freshman Level | 2026</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="60" fill="#2563eb" opacity="0.05"/>
+  <circle cx="1300" cy="900" r="80" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="1200" cy="150" r="40" fill="#10b981" opacity="0.08"/>
 </svg>
